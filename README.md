@@ -94,14 +94,22 @@ GET /v1/pricing  +  GET /v1/credits                  # know the cost first
 
 ## MCP (drive the API from Claude / Cursor / VS Code)
 
-The product ships an MCP server with 17 tools — setup for every client is
-documented in the product repo (`mcp-server/README.md`) and on the
-[developer portal](https://www.coursesmith.ai/developers). Claude Code:
+This repo ships the CourseSmith MCP server —
+[`mcp/coursesmith_mcp.py`](mcp/coursesmith_mcp.py), 17 tools: create
+lessons, generate lectures, edit storyboard scenes, render videos, poll
+jobs. Setup for every client (Claude Code, Claude Desktop, Cursor,
+VS Code Copilot, Windsurf) is in [`mcp/README.md`](mcp/README.md) and on
+the [MCP guide](https://www.coursesmith.ai/developers/mcp). Claude Code:
 
 ```bash
+pip install "mcp[cli]" httpx
 claude mcp add coursesmith -e COURSESMITH_API_KEY=cs_live_... \
-  -- python /path/to/coursesmith_mcp.py
+  -- python "$(pwd)/mcp/coursesmith_mcp.py"
 ```
+
+Prefer skills over MCP? A ready-made Claude skill ships at
+[`skills/coursesmith-video/SKILL.md`](skills/coursesmith-video/SKILL.md)
+— drop the folder into `~/.claude/skills/`.
 
 ## License
 
