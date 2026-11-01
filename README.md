@@ -1,5 +1,15 @@
 # CourseSmith API Examples
 
+<p align="center">
+  <a href="media/ant-swarm-intelligence-reel.mp4">
+    <img src="media/ant-swarm-intelligence-preview.gif" width="300" alt="The camera pushes into an ant's head, which turns translucent to show its 250,000 neurons">
+  </a>
+  <br>
+  <b>▶ <a href="media/ant-swarm-intelligence-reel.mp4">Watch the full reel</a></b>: how ants solve problems with no boss, and how that inspires multi-agent AI (2:54, vertical)
+  <br>
+  <sub>Made with CourseSmith and Claude. Photos: <a href="https://commons.wikimedia.org/wiki/File:2010-365-251_The_Bronx_aerial_view_(4972664239).jpg">cogdogblog</a> (CC BY 2.0), <a href="https://commons.wikimedia.org/wiki/File:Kilobot_robot_swarm.JPG">asuscreative</a> (CC BY-SA 4.0), via Wikimedia Commons.</sub>
+</p>
+
 Runnable examples for the [CourseSmith](https://www.coursesmith.ai) public
 API — turn a topic, URL, document, or GitHub repo into a rendered, narrated
 course video from your own code.
